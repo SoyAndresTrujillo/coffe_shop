@@ -6,3 +6,7 @@ now install dependencies
 ```bash
 pip install -r requirements.txt
 ```
+create app
+```bash
+./manage.py startapp products
+```
