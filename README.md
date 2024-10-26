@@ -10,3 +10,7 @@ create app
 ```bash
 ./manage.py startapp products
 ```
+create a superuser
+```bash
+./manage.py createsuperuser
+```
