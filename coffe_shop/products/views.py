@@ -7,7 +7,7 @@ from .models import Product
 # Create your views here.
 
 
-class ProductListView(generic.FormView):
+class ProductAddView(generic.FormView):
     template_name = "products/add_product.html"
     form_class = ProductForm
     success_url = reverse_lazy("list_product")
@@ -17,6 +17,7 @@ class ProductListView(generic.FormView):
         return super().form_valid(form)
 
 
-class ProductList(generic.ListView):
+class ProductListView(generic.ListView):
     model = Product
     template_name = "products/list_product.html"
+    context_object_name = "products"
