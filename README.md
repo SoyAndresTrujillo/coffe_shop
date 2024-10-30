@@ -14,3 +14,7 @@ create a superuser
 ```bash
 ./manage.py createsuperuser
 ```
+Format code
+```bash
+black .
+```
