@@ -81,7 +81,7 @@ WSGI_APPLICATION = "coffe_shop.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
-DATABASES = {"default": env.db("DB_URL")}
+DATABASES = {"default": env.db("SUPABASE_URL_POSTGRES")}
 
 
 # Password validation
